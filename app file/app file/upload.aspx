@@ -22,6 +22,9 @@
                     alert("Le fichier n'est pas valid Veulliez ressaser d'uploader le fichier de type png , jpeg ou jpg");
                 arguments.IsValid = false;
             }
+            if (arguments.IsValid = true && document.getElementById("FileUpload1").files[0].size > 524288) {
+                alert("Le fichier est superieur a 512kb");
+            }
         }
     </script>
 </head>
